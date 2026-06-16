@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head >
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$('head').append('<script src="js/config.js?ver='+ new Date().getTime() + '"><' + '/script>');
+			$('head').append('<link href="css/index.css?v=' + config.version + '" rel="stylesheet" />');
+		</script>
+		<script src="js/index.js?ver=1"></script>
+	</head>
+	<body>
+		<nav id="loading"></nav>
+		<script>$('#loading').load('loading.html');</script>
+		
+		<div class="maincontent" style="visibility: hidden;">
+		<!---<nav class="menu nocopy"></nav>
+		<script>$('.menu').load('menu.html');</script>--->
+
+		<div class="content centerparent">
+			<div id="icon" class = "centerparent-flex">
+					<div id = "icon"></div>
+			</div>
+			<div id="dividing-div" class = "dividing-line"></div>
+			<div class="processing">
+				<!--<canvas data-processing-sources="sockets/Brownian_Motion.pde sockets/ArrayQueue.pde" class="processing"></canvas>-->
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
