@@ -8,7 +8,7 @@ function endloading()
         {   
             objLoading.style.display = "none";   
         }   
-    }, "2100");
+    }, "3000");
 }
 
 
