@@ -4,6 +4,11 @@ html {
     height: 100%;
 }
 
+@font-face {
+    font-family: titlefont;
+    src: url("font/HelveticaNeueLightItalic.otf") format("opentype");
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -24,13 +29,12 @@ body {
 }
 
 p, a , pre {
-    color: rgb(110, 89, 62);
+    color: rgb(161, 161, 161);
     font-size: 0.9rem;
     margin:0 auto;
-    
+    font-family: "titlefont", "Microsoft JhengHei";
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-family:"LiSong Pro";
     direction: ltr;
 }
 
@@ -41,18 +45,22 @@ p, a , pre {
 .title{
     font-family:"titlefont", "Microsoft JhengHei";
 }
-.subtitle{
+.subtitle, .subtitle2{
     font-family: "titlefont", "Microsoft JhengHei";
     line-height: 2rem;
-    font-size: 1.2rem;
-}
-.black .subsubtitle{
+    font-size: 3rem;
     color:rgb(221, 221, 221);
 }
-.subsubtitle, .subsubtitle a{
-    font-family: "titlefont", "Microsoft JhengHei";
-    color:rgb(154, 153, 131);
-    font-size: 0.7rem;
+.subtitle2{
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .subtitle{
+        font-size: 1.2rem;
+    }
+    .subtitle2{
+        font-size: 1rem;
+    }
 }
 
 .underline{
@@ -68,10 +76,6 @@ p, a , pre {
     background-repeat:repeat-x;
 }
 
-@font-face {
-    font-family: titlefont;
-    src: url("font/03HomuraM-SemiLight-2.otf") format("opentype");
-}
 
 a,a:hover,a:active,a:visited,a:link,a:focus{
     -webkit-tap-highlight-color: transparent;
@@ -92,6 +96,8 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
 
 .maincontent{
     visibility: hidden;
+    width:100vw;
+    overflow-x: hidden;
 }
 
 .centerparent-flex, .centerparent-grid{
@@ -109,4 +115,15 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
 
 .link{
     cursor:pointer;
+}
+
+#loading{
+    position: fixed;
+    width:100vw;
+    width:100dvw;
+    height:100vh;
+    height:100dvh;
+    z-index: 9999999;
+    opacity: 1;
+    transition: opacity 1s cubic-bezier(0.1, 0.1, 0.3, 0.8) 1s;
 }

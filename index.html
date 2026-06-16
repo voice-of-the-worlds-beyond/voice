@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head >
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 			$('head').append('<script src="js/config.js?ver='+ new Date().getTime() + '"><' + '/script>');
@@ -18,12 +19,66 @@
 
 		<div class="content centerparent">
 			<div id="icon" class = "centerparent-flex">
-					<div id = "icon"></div>
+					<img src="image/video/Logo.gif" style="width: 50%; min-width: 400px;">
 			</div>
-			<div id="dividing-div" class = "dividing-line"></div>
-			<div class="processing">
-				<!--<canvas data-processing-sources="sockets/Brownian_Motion.pde sockets/ArrayQueue.pde" class="processing"></canvas>-->
-			</div>
+			<section id="introduction-block">
+				<h2 class="subtitle">Introduction</h2>
+				<p id="introduction-text">Voices From the Worlds Beyond is a mixed reality stargazing experience created as part of Timeslip Radio, an interdimensional radio station exhibition that takes place in Manchester. Visitors use hand gestures to reach for real-time tracked stars and planets and hear sounds from them. While waiting, they can explore a mobile website that tracks the live position of the ISS and streams its live feed.</p>
+			</section>
+
+			<section id="member-block">
+				<h2 class="subtitle">Members</h2>
+				<div id="members" class="centerparent-flex">
+					<section>
+						<h2 class="subtitle">Ashwin</h2>
+						<section class="links-block centerparent-flex">
+							<a href="https://www.linkedin.com/in/ashwinfulfagar/" target="_blank" class="centerparent-flex">
+								<span class="icondot"></span>
+								<i class="bi bi-linkedin"></i>
+							</a>
+							<a href="https://ashwinfulfagar.framer.website/" target="_blank" class="centerparent-flex">
+								<span class="icondot"></span>
+								<i class="bi bi-house-fill"></i>
+							</a>
+						</section>
+					</section>
+					<section>
+						<h2 class="subtitle2">Angel</h2>
+						<section class="links-block centerparent-flex">
+							<a href="https://www.linkedin.com/in/yu-tung-wu-395b0a2ba/overlay/contact-info/" target="_blank" class="centerparent-flex">
+								<span class="icondot"></span>
+								<i class="bi bi-linkedin"></i>
+							</a>
+							<a href="https://wty262690.github.io/portfolio/" target="_blank" class="centerparent-flex">
+								<span class="icondot"></span>
+								<i class="bi bi-house-fill"></i>
+							</a>
+						</section>
+					</section>
+					<section>
+						<h2 class="subtitle2">Zijun</h2>
+						<section class="links-block centerparent-flex">
+							<a href="https://sites.google.com/view/wzjoporfolio/home_porfolio" target="_blank" class="centerparent-flex">
+								<span class="icondot"></span>
+								<i class="bi bi-house-fill"></i>
+							</a>
+						</section>
+					</section>
+				</div>
+			</section>
+
+			<footer class="centerparent-flex">
+				<div id="contact-block" class="centerparent-flex">
+					<img src="image/video/Logo.gif" style="width: 50%; padding: 10%">
+					<a href="mailto:voiceoftheworldsbeyond@gmail.com" class="centerparent-flex">
+						<div class="centerparent-flex">
+							<span class="icondot"></span>
+							<i class="bi bi-envelope"></i>
+						</div>
+						<p>voiceoftheworldsbeyond@gmail.com</p>
+					</a>
+				</div>
+			</footer>
 		</div>
 		</div>
 	</body>
