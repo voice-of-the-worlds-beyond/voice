@@ -21,12 +21,15 @@
 			<div id="icon" class = "centerparent-flex">
 					<img src="image/video/Logo.gif" style="width: 50%; min-width: 400px;">
 			</div>
-			<section id="Title-block">
+
+			<section id="title-block">
 				<h2 class="subtitle">Voice from the Worlds Beyond</h2>
 				<ul>
-					<li>interaction 6DOF MixReality</li>
-					<li>around 7"</li>
-					<li></li>
+					<li>6DOF (Six Degrees of Freedom) immersive interaction</li>
+					<li>Mixed Reality (MR)</li>
+					<li>7-minute immersive experience session</li>
+					<li>Spatial anchoring & Spatial audio</li>
+					<li>Hand / gesture-based interaction support</li>
 				</ul>
 			</section>
 			<section id="introduction-block">
@@ -34,8 +37,26 @@
 				<p id="introduction-text">Voices From the Worlds Beyond is a mixed reality stargazing experience created as part of Timeslip Radio, an interdimensional radio station exhibition that takes place in Manchester. Visitors use hand gestures to reach for real-time tracked stars and planets and hear sounds from them. While waiting, they can explore a mobile website that tracks the live position of the ISS and streams its live feed.</p>
 			</section>
 
+			<div id="video-demo" class="video-cover centerparent-flex" onclick="loadVideo()">
+				<img src="https://img.youtube.com/vi/_kAiiBlHrIQ/maxresdefault.jpg">
+				<span class="icondot"></span>
+				<i class="bi bi-play-fill"></i>
+			</div>
+
+			<script>
+			function loadVideo() {
+				document.querySelector('.video-cover').innerHTML = `
+					<iframe
+						src="https://www.youtube.com/embed/_kAiiBlHrIQ?autoplay=1"
+						frameborder="0"
+						allow="autoplay; encrypted-media"
+						allowfullscreen>
+					</iframe>
+				`;
+			}
+			</script>
+
 			<section id="member-block">
-				<h2 class="subtitle">Members</h2>
 				<div id="members" class="centerparent-flex">
 					<section>
 						<h2 class="subtitle2">Ashwin</h2>
@@ -74,10 +95,10 @@
 					</section>
 				</div>
 			</section>
-
+			<div class="spacer"></div>
 			<footer class="centerparent-flex">
 				<div id="contact-block" class="centerparent-flex">
-					<img src="image/video/Logo.gif" style="width: 50%; padding: 10%">
+					<img src="image/video/Logo.gif">
 					<a href="mailto:voiceoftheworldsbeyond@gmail.com" class="centerparent-flex">
 						<div class="centerparent-flex">
 							<span class="icondot"></span>

@@ -28,14 +28,19 @@ body {
     text-justify: inter-ideograph;
 }
 
-p, a , pre {
+p, a , pre , li{
     color: rgb(161, 161, 161);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.2cm;
     margin:0 auto;
     font-family: "titlefont", "Microsoft JhengHei";
     white-space: pre-wrap;
     word-wrap: break-word;
     direction: ltr;
+}
+
+ul{
+    list-style-type: circle;
 }
 
 .mark{

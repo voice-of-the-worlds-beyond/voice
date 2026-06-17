@@ -3,12 +3,22 @@
 body{
     background-color: black;
 }
-#introduction-block, #member-block, #contact-block{
+#video-block{
+    width: 100%;
+    margin: 100px 0;
+}
+#title-block, #introduction-block, #member-block, #contact-block{
     width: 80%;
     margin: 0 auto;
 }
 #member-block section{
     width : 100%;
+}
+#members > section{
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(43, 43, 43, 0.9);
 }
 #introduction-text{
     font-size: 1.2rem;
@@ -19,10 +29,11 @@ body{
     overflow: hidden;
 }
 .links-block a{
-    margin: 0 1rem;
+    margin: 0 2.5rem;
 }
 
 .bi{
+    z-index: 2;
     color: gray;
     /*padding-left: 0.5rem;
     padding-right: 0.5rem;*/
@@ -30,20 +41,86 @@ body{
     margin:auto;
 }
 .icondot{
+    z-index: 1;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-image: url('../image/shine.png');
+    background-size: contain;
+    border-radius: 100vw;
+    background-color: black;
+    border: 1px solid white;
+    animation: pulse 2s linear infinite;
+}
+
+.spacer{
+    height: 20rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6) rotate(70deg);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1) rotate(50deg);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.2) rotate(20deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.6) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+li{
+    margin: 0;
+}
+
+#video-demo{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 50vw;
+}
+#video-demo img{
     z-index: -1;
     position: absolute;
-    width: 3.1rem;
-    height: 3.1rem;
-    border-radius: 100vw;
-    background-color: white;
+    border: 1px solid white;
+    width: 80%;
+    border-radius: 50px;
+}
+#video-demo iframe{
+    width: 80vw;
+    height: 100%;
+}
+.play-btn{
+    color: white;
 }
 
 footer{
+    z-index: -2;
     height: auto;
+    background-color: rgb(43, 43, 43);
 }
+footer img{
+    width: 30%;
+}
+footer a{
+    width: 70%;
+}
+footer a p{
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    line-height: 0.7rem;
 
+}
 @media (max-width: 768px) {
-    #introduction-text{
+    #introduction-text, li{
         width: 80%;
         font-size: 0.8rem;
         line-height: 1.5rem;
@@ -52,10 +129,17 @@ footer{
         font-size: 1.2rem;
     }
     .icondot{
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     .links-block a{
         margin: 0 0.7rem;
+    }
+    p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .spacer{
+        height: 5rem;
     }
 }
